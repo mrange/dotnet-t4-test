@@ -1,0 +1,9 @@
+﻿<#@output extension=".cs"#>
+namespace t4_test;
+
+static partial class T4It
+{
+<# for (var i = 0; i < 24; ++i) { #>
+  const float Const_<#=i#> = <#=i#>;
+<# } #>
+}
